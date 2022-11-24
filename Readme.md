@@ -45,12 +45,12 @@ The server should also be able to:
 The assignment must be implemented using Java sockets. Java multithreading, locks and monitors should be used where necessary. Basic Java JDK should be used. It should work with Java versions 8, 11 or 18 (as installed in Labs). No additional libraries/packages should be used. If data storage is necessary, files should be used.
 
 # Demo Screenshots
-![Screenshot](img/Screenshot 2022-11-24 at 04.41.13.png)
-![Screenshot](img/Screenshot 2022-11-24 at 04.41.49.png)
-![Screenshot](img/Screenshot 2022-11-24 at 04.42.23.png)
-![Screenshot](img/Screenshot 2022-11-24 at 04.43.20.png)
-![Screenshot](img/Screenshot 2022-11-24 at 04.43.31.png)
-![Screenshot](img/Screenshot 2022-11-24 at 04.43.44.png)
-![Screenshot](img/Screenshot 2022-11-24 at 04.44.08.png)
-![Screenshot](img/Screenshot 2022-11-24 at 04.44.25.png)
-![Screenshot](img/Screenshot 2022-11-24 at 04.44.50.png)
+![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot1.png)
+![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot2.png)
+![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot3.png)
+![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot4.png)
+![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot5.png)
+![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot6.png)
+![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot7.png)
+![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot8.png)
+![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot9.png)
