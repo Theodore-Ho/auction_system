@@ -168,8 +168,10 @@ public class Client extends JFrame {
                 addMessageToQueue(msgDisplayQueue, response.split("\\$")[1]);
                 jTextArea.setText(getMessageDisplay(msgDisplayQueue));
                 try {
+                    is.close();
+                    os.close();
                     Thread.sleep(5000);
-                } catch (InterruptedException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
                 dispose(); // turn off window

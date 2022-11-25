@@ -1,3 +1,1 @@
-cd ../out/production/impl
-java ServerApplication
-pause
+java -jar ../out/artifacts/assignment_jar/assignment.jar

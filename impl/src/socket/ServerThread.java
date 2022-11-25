@@ -117,6 +117,12 @@ public class ServerThread extends Thread {
                     getAll_username().remove(this.getUsername());
                     userLeftMsg("User " + this.getUsername() +  " (" + socketInfo + ") left the session.");
                 }
+                try {
+                    is.close();
+                    os.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
             // User bid
             } else if (!msg.equals("") && this.getIn_auction()) {
