@@ -1,16 +1,16 @@
 # Distributed Systems Assignment
 
-- [1. Introduction](#introduction)
-- [1.1. Client Requirements](#client-requirements)
-- [1.2. Server Requirements](#server-requirements)
-- [2. Server Requirements](#application-architecture)
-- [2.1. Basic Logic](#)
-- [2.2. Folder Instruction](#)
-- [2.3. Code Structure](#)
-- [3. How to run?](#)
-- [3.1. Windows](#)
-- [3.2. MacOS](#)
-- [4. Demo Screenshots](#)
+- [1. Introduction](#1-introduction)
+- [1.1. Client Requirements](#11-client-requirements)
+- [1.2. Server Requirements](#12-server-requirements)
+- [2. Server Requirements](#2-application-architecture)
+- [2.1. Basic Logic](#21-basic-logic)
+- [2.2. Folder Instruction](#22-folder-instruction)
+- [2.3. Code Structure](#23-code-structure)
+- [3. How to run?](#3-how-to-run)
+- [3.1. Windows](#31-windows)
+- [3.2. MacOS](#32-macos)
+- [4. Demo Screenshots](#4-demo-screenshots)
 
 ## 1. Introduction
 
@@ -93,11 +93,12 @@ The message type sent between client and server is String. A message indicator h
 Make sure you have the Java 8 or newer installed.
 
 ### 3.1. Windows
-1. Open "run" folder.
 - Run with EXE
+  1. Open "run" folder.
   2. Double click "AuctionServer.exe".
   3. Double click "AuctionClient.exe".
 - Run with BAT
+  1. Open "run" folder.
   2. Double click "server.bat".
   3. Double click "client.bat".
 
