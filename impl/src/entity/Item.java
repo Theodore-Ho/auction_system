@@ -2,7 +2,7 @@ package entity;
 
 public class Item {
 
-    private String name;
+    private final String name;
     private int price;
 
     public Item(String name, int price) {
@@ -12,10 +12,6 @@ public class Item {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getPrice() {

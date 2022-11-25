@@ -40,7 +40,7 @@ public class TableUtils {
             s.append("\n").append(i + 1) // Item No.
                     .append("\t").append(all_items.get(i).getName()); // Item name
             if(i == 0) {
-                s.append("\t").append(all_items.get(all_items.size() - 1).getPrice()) // Item price
+                s.append("\t").append(all_items.get(i).getPrice()) // Item price
                         .append("\t").append("current");
             } else {
                 s.append("\t").append(all_items.get(i).getPrice());

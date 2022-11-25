@@ -30,7 +30,7 @@ public class Server extends JFrame {
     private static final List<Item> all_items = new ArrayList<>(); // item list
     private static final List<Record> records = new ArrayList<>(); // record list
     private static final Map<Integer, String> msgDisplayQueue = new HashMap<>(); // GUI message display queue
-    private static boolean startCountDown = false; // true: start count down; false: do nothing (when the auction hasn't started)
+    private static boolean server_running = true; // true: start count down; false: finish count down
     static Integer t = 45; // count down from 45
 
     public static HashSet<String> getAll_username() {
@@ -48,6 +48,7 @@ public class Server extends JFrame {
     public void run() throws IOException {
         initialItem();
         windowHandler();
+        timeCount();
 
         ServerSocket serverSocket = new ServerSocket(58729);
         while (true){
@@ -116,6 +117,7 @@ public class Server extends JFrame {
         jTextField.addActionListener(e -> {
             String text = jTextField.getText().trim();
             if(text.equals(String.valueOf(QUIT))) { // if user input "QUIT"
+                server_running = false; // Finish count down, close the countdown thread
                 sendToAll(FORCE_QUIT, "", threads);
                 try {
                     Thread.sleep(1000);
@@ -147,16 +149,6 @@ public class Server extends JFrame {
     }
 
     /**
-     * start auction
-     */
-    public static void startAuction() {
-        if(!startCountDown) { // can only be entered once
-            startCountDown = true;
-            timeCount(); // start to count down
-        }
-    }
-
-    /**
      * count down method
      */
     private static void timeCount() {
@@ -164,7 +156,7 @@ public class Server extends JFrame {
         timer.schedule(new TimerTask() {
             @Override
             public void run() { // create a new thread to count down
-                while(t > 0) {
+                while(server_running) {
                     t--;
                     try {
                         Thread.sleep(1000); // wait 1 second
@@ -173,6 +165,9 @@ public class Server extends JFrame {
                         }
                     } catch (InterruptedException e) {
                         e.printStackTrace();
+                    }
+                    if(t == 0) { // reset countdown index to 45, prevent the countdown close when nobody in the auction
+                        t = 45;
                     }
                 }
             }

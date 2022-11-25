@@ -68,7 +68,6 @@ public class ServerThread extends Thread {
 
     @Override
     public void run() {
-        startAuction(); // let main thread start auction
         String socketInfo = socket.getInetAddress() + ":" + socket.getPort();
         String msg = "";
         while (!msg.equals(String.valueOf(QUIT))){ // Thread finish when input "QUIT"
@@ -82,10 +81,6 @@ public class ServerThread extends Thread {
             } else if (msg.equals(String.valueOf(ALLITEM))) { // if user input "ALLITEM"
                 this.setIn_auction(false);
                 this.setIn_item(true);
-            }
-
-            if(msg.equals(String.valueOf(QUIT))) { // if user input "QUIT"
-                threads.remove(socketInfo); // remove the thread, prevent crash on server console
             }
 
             // User register
@@ -113,6 +108,7 @@ public class ServerThread extends Thread {
 
             // User quit
             } else if (msg.equals(String.valueOf(QUIT))) {
+                threads.remove(socketInfo); // remove the thread, prevent crash on server console
                 if(this.getUsername().equals("")) {
                     IOUtils.writeString(os, String.valueOf(QUIT_SUCCESS));
                     userLeftMsg("User " + socketInfo + " left the session.");
@@ -134,6 +130,7 @@ public class ServerThread extends Thread {
                         SimpleDateFormat sdf=new SimpleDateFormat("HH:mm:ss");
                         String sd = sdf.format(new Date(Long.parseLong(String.valueOf(timeStamp))));
                         Record new_record = new Record(bid, this.getUsername(), sd);
+                        getAll_items().get(0).setPrice(bid);
                         get_records().add(new_record);
                         response = auctionInfo(get_records(), getAll_items(), false);
                         sendToOthers(threads, socketInfo, response, NEW_BID);
