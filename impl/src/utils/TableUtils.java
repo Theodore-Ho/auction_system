@@ -70,7 +70,7 @@ public class TableUtils {
                     + records.get(last_bid).getPrice() // Bid price
                     + "\t" + records.get(last_bid).getUser() // Bid user (Who bid this?)
                     + "\t" + records.get(last_bid).getTimestamp(); // Bid timestamp
-        } else { // Case 2: Case without head, such as user already in auction screen, just need to update the display
+        } else { // Case without head, such as user already in auction screen, just need to update the display
             s = (last_bid) + "\t"
                     + records.get(last_bid).getPrice()
                     + "\t" + records.get(last_bid).getUser()

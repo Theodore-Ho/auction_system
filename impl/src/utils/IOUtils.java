@@ -16,9 +16,9 @@ public class IOUtils {
     }
 
     public static void writeString(OutputStream os, String s) {
-        DataOutputStream dStream = new DataOutputStream(os);
+        DataOutputStream ds = new DataOutputStream(os);
         try {
-            dStream.writeUTF(s);
+            ds.writeUTF(s);
         } catch (IOException e) {
             e.printStackTrace();
         }
