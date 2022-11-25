@@ -1,5 +1,7 @@
 # Distributed Systems Assignment
 
+## Introduction
+
 For this assignment you are required to design and implement a distributed application that is a simulator of an electronic auction system.
 
 There will be multiple clients and a server. The server will offer items for sale. The client module will allow the user to bid for items. An item is sold to the highest bidder. Your code will enable users only to bid for items – it will not conduct actual purchase transactions.
