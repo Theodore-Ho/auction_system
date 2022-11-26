@@ -53,7 +53,7 @@ The server should:
 
 ### 2.1. Basic Logic
 
-Server running in a thread, each client running in a thread. When client create, it automatically connects to server. A HashMap in the server records all the clients' socket information it connects with. This HashMap will use for send message to everyone.
+Server running in a thread, each client running in a thread. When client create, it automatically connects to server. A HashMap in the server records all the clients' socket information it connects with. This HashMap will use for sending message to everyone.
 
 The auction is running when server starting. The countdown is a 45 seconds infinite loop running in a unique thread. Once the client bid, the server reset the countdown to 45. Otherwise, when the countdown became 0, the program will judge the auction status: either continue auction current item, move to next item, or finish all the auction.
 
@@ -111,8 +111,10 @@ The BAT file running the JAR in the "out" folder. Because this project contains 
 2. Run ```./server.sh```
 3. Run ```./client.sh```
 
+You can run client as much as you want.
+
 ### 3.3. Command for the app
-The input box at thebottom of GUI window. All the command is case sensitive!
+The input box at the bottom of GUI window. All the command is case sensitive!
 - For server window:
   - ```ALLITEM``` to check all items
   - ```ADD Laptop 1000``` to add the new item "Laptop" with price 1000
@@ -124,8 +126,6 @@ The input box at thebottom of GUI window. All the command is case sensitive!
   - ```ADD Laptop 1000``` to add the new item "Laptop" with price 1000, this will only working when you in the item list screen.
   - ```MENU``` to enter the menu screen, you can check your client command there.
   - ```QUIT``` to quit the client.
-
-You can run client as much as you want.
 
 ## 4. Demo Screenshots
 ![Screenshot](https://github.com/Theodore-Ho/auction_system/blob/main/img/Screenshot1.png)
