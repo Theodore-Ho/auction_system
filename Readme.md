@@ -117,11 +117,11 @@ You can run client as much as you want.
 ### 3.3. Command for the app
 The input box at the bottom of GUI window. All the command is case sensitive!
 - For server window:
-  - Input user name first.
   - ```ALLITEM``` to check all items
   - ```ADD Laptop 1000``` to add the new item "Laptop" with price 1000
   - ```QUIT``` to quit the server, and close all the client
 - For client window:
+  - Input user name first.
   - ```AUCTION``` to enter the auction screen.
   - Input any integer to bid, this will only working when you in the auction screen.
   - ```ALLITEM``` to enter the item list screen.
