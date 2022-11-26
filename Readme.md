@@ -3,7 +3,7 @@
 - [1. Introduction](#1-introduction)
 - [1.1. Client Requirements](#11-client-requirements)
 - [1.2. Server Requirements](#12-server-requirements)
-- [2. Server Requirements](#2-application-architecture)
+- [2. Application Architecture](#2-application-architecture)
 - [2.1. Basic Logic](#21-basic-logic)
 - [2.2. Folder Instruction](#22-folder-instruction)
 - [2.3. Code Structure](#23-code-structure)
