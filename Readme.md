@@ -10,6 +10,7 @@
 - [3. How to run?](#3-how-to-run)
 - [3.1. Windows](#31-windows)
 - [3.2. MacOS](#32-macos)
+- [3.3. Command for the app](#33-command-for-the-app)
 - [4. Demo Screenshots](#4-demo-screenshots)
 
 ## 1. Introduction
