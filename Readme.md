@@ -111,6 +111,20 @@ The BAT file running the JAR in the "out" folder. Because this project contains 
 2. Run ```./server.sh```
 3. Run ```./client.sh```
 
+### 3.3. Command for the app
+The input box at thebottom of GUI window. All the command is case sensitive!
+- For server window:
+  - ```ALLITEM``` to check all items
+  - ```ADD Laptop 1000``` to add the new item "Laptop" with price 1000
+  - ```QUIT``` to quit the server, and close all the client
+- For client window:
+  - ```AUCTION``` to enter the auction screen.
+  - Input any integer to bid, this will only working when you in the auction screen.
+  - ```ALLITEM``` to enter the item list screen.
+  - ```ADD Laptop 1000``` to add the new item "Laptop" with price 1000, this will only working when you in the item list screen.
+  - ```MENU``` to enter the menu screen, you can check your client command there.
+  - ```QUIT``` to quit the client.
+
 You can run client as much as you want.
 
 ## 4. Demo Screenshots
